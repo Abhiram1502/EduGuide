@@ -141,7 +141,7 @@ nav{
 #Menu,#cross{
     display: none;
     font-size: 20px;
-    background-color: bisque;
+    background-color: rgba(255, 166, 0, 0.377);
     padding: 10px;
     border-radius: 6px;
     margin: 10px;
@@ -212,6 +212,21 @@ nav{
 }
 
 @media (max-width:800px) {
+    .btn1,.btn2{
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin: 10px;
+    }
+    .hero-head{
+        font-size: 40px;
+    }
+    .hero-content .hero-para{
+        font-size: 17px;
+    }
+    .hero-section{
+        height: 500px;
+    }
     .link-section{
         flex-direction: column;
         align-items: center;
@@ -254,8 +269,52 @@ nav{
     .logo{
         height: 80px;
     }
+    .hero-section{
+        height: 370px;
+    }
+    .btn1,.btn2{
+        padding: 8px;
+        font-size: 11px;
+        margin: 5px;
+    }
+    .hero-content{
+        padding: 20px;
+    }
+    .hero-head{
+        margin: 5px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: white;
+    }
+    .hero-content .hero-para{
+        margin: 5px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
 }
 @media (max-width:390px){
+    .btn1,.btn2{
+        padding: 7px;
+        font-size: 10px;
+        margin: 5px;
+    }
+    .hero-content{
+        padding: 15px;
+    }
+    .hero-head{
+        margin: 5px;
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    .hero-content .hero-para{
+        margin: 5px;
+        margin-bottom: 15px;
+        font-size: 12.5px;
+    }
+    .hero-section{
+        height: 60vh;
+        align-items: center;
+    }
     .logo{
         margin-left: 5px;
         height: 65px;
@@ -265,6 +324,7 @@ nav{
     #Menu{
         padding: 8px;
         margin: 5px;
+        font-size: 15px;
     }
     .search-input::placeholder{
         font-size: 12px;
