@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+:root{
+    --orange:#fe9800;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(242, 236, 236);
+}
+.logo{
+    margin-left: 15px;
+    height: 80px;
+}
+.links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #2b315f;
+}
+.link{
+    letter-spacing: 1px;
+    padding: 5px;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.link-section{
+    display: flex;
+}
+.active{
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 5px;
+}
+.link::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #2b315f;
+    display: block;
+    transition: 0.6s;
+    border-radius: 20px;
+}
+.link:hover::after{
+    width: 100%;
+}
+#login,#signup{
+    border: none;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#login:hover,#signup:hover{
+    transform: scale(1.05);
+    transition: 0.35s ease-in-out;
+}
+#login{
+    background-color: transparent;
+    border: 0.5px solid #2b315f;
+    letter-spacing: 0.5px;
+}
+#signup{
+    background-color: #2b315f;
+    color: white;
+    letter-spacing: 0.5px;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search{
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search-input{
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 0px;
+    right: 0;
+    outline: none;
+    visibility: hidden;
+    height: 17px;
+    padding: 5px;
+    padding-left: 10px;
+    background-color: transparent;
+    color: white;
+    transition: 0.5s ease-in-out;
+    border: none;
+    cursor: pointer;
+    margin-right: 26px;
+}
+.search:focus ~ .search-input{
+    width: 100px;
+    background-color: aliceblue;
+    color: black;
+    transition: 0.5s ease-in-out;
+    display: block;
+    visibility: visible;
+}
+.search-input:focus{
+    width: 100px;
+    background-color: aliceblue;
+    color: black;
+    visibility: visible;
+}
+.search-input::placeholder{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+.search:focus{
+    background-color: #2b315f;
+    color: white;
+}
+#Menu,#cross{
+    display: none;
+    font-size: 20px;
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px;
+    color: #2b315f;
+}
+
+@media (max-width:800px) {
+    .link-section{
+        flex-direction: column;
+        align-items: center;
+        height: 99vh;  
+        position: absolute;
+        width: 180px;
+        right: -180px;
+        background-color: #fe9800b1;
+        color: white;
+        outline-style: none;
+        top: 0;
+        margin: none;
+    }
+    #cross{
+        display: flex;
+        width: 150px;
+        background-color: transparent;
+        padding:0px;
+        justify-content: flex-end;
+    }
+    .link{
+        display: block;
+        margin-top: 10px;
+    }
+    .active{
+        background-color: #2b315f;
+    }
+    .link::after{
+        background-color: white;
+    }
+    #login,#signup{
+        margin-top: 10px;
+        color: white;
+    }
+    #Menu{
+        display: block;
+    }
+}
+@media (max-width:500px){
+    .logo{
+        height: 80px;
+    }
+}
+@media (max-width:390px){
+    .logo{
+        margin-left: 5px;
+        height: 65px;
+        width: 130px;
+        overflow: hidden;
+    }
+    #Menu{
+        padding: 8px;
+        margin: 5px;
+    }
+    .search-input::placeholder{
+        font-size: 12px;
+    }
+}

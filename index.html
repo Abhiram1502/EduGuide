@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGuide</title>
+    <link rel="icon" href="images/EGL.png">
+    <link  rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+    <div>
+        <nav>
+            <div>
+                <img class="logo" src="images/EduGuide.png" alt="EduGuide">
+            </div>
+            <ul class="links">
+                <div class="search-container">
+                    <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input class="search-input" type="text" placeholder="Search Courses">
+                </div>
+                <div class="link-section" id="links">
+                    <i id="cross" onclick="hideMenu()" class="fa-solid fa-xmark"></i>
+                    <li class="link active">Home</li>
+                    <li class="link">Courses</li>
+                    <li class="link">About Us</li>
+                    <li class="link">Blog</li>
+                    <li class="link">Contact Us</li>
+                    <li class="login"><button id="login">Login</button></li>
+                    <li class="signup"><button id="signup">Sign Up</button></li>
+                </div>
+                <i id="Menu" onclick="showMenu()" class="fa-solid fa-bars"></i>
+            </ul>
+        </nav>
+        <div class="hero-section">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
