@@ -1100,4 +1100,8 @@ nav{
     .news{
         width: 80%;
     }
+    .line2{
+    margin: 1px;
+    color: rgba(238, 225, 225, 0.42);
+    }
 }
