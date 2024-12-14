@@ -97,6 +97,10 @@ nav{
 .link:hover::after{
     width: 100%;
 }
+nav ul li a{
+    text-decoration: none;
+    color: #2b315f;
+}
 #login,#signup{
     border: none;
     padding: 8px;
@@ -219,6 +223,7 @@ nav{
     border-radius: 5px;
     border: none;
     margin: 10px;
+    animation: popIn 1s ease-in-out;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .btn1{
@@ -245,12 +250,16 @@ nav{
     margin-bottom: 30px;
     font-size: 50px;
     color: white;
+    animation: slideInL 1s ease-in-out;
 }
 .hero-content .hero-para{
     margin: 10px;
     margin-bottom: 30px;
     font-size: 20px;
     color: #ffffff;
+}
+.hero-para{
+    animation: slideInL 1s ease-in-out;
 }
 
 /*------------Features-----------------*/
@@ -567,8 +576,43 @@ nav{
 .pop-content{
     height: 68%;
 }
-
-
+.pop-btn{
+    background-color: #2b315f;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: white;
+}
+.pop-btn:hover{
+    transform: scale(1.08) translateY(-50px);
+    transition: 0.6s ease-in-out;
+}
+/*-------------Key-Frames-------------*/
+@keyframes slideInL{
+    from{
+        transform:translateX(-100%);
+    }to{
+        transform:translateX(0);
+    }
+}
+@keyframes slideInR{
+    from{
+        transform:translateX(100%);
+    }to{
+        transform:translateX(0);
+    }
+}
+@keyframes popIn{
+    from{
+        transform: scale(0) translateY(100%);
+        opacity: 0;
+    }to{
+        transform:scale(1);
+        opacity: 1;
+    }
+}
 /*-------------Testimonials-----------*/
 .testimonial-section{
     padding: 30px;
@@ -613,7 +657,28 @@ nav{
     margin: 10px;
 }
 
+/*-------------Course-Page-----------------*/
+
+.course-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b315f;
+    color: white;
+    font-size: 35px;
+    padding: 30px;
+    font-family: "SUSE", serif;
+    letter-spacing: 1px;
+}
+
 @media (max-width:800px) {
+    .course-banner{
+        font-size: 28px;
+        padding: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        letter-spacing: 0.5px;
+    }
     .btn1,.btn2{
         padding: 10px;
         border-radius: 5px;
@@ -641,6 +706,9 @@ nav{
         color: white;
         top: 0;
         margin: none;
+    }
+    nav ul li a{
+        color: white;
     }
     #cross{
         display: flex;
@@ -730,7 +798,7 @@ nav{
         padding-top: 20px;
     }
     .pop1{
-        width: 28%;
+        width: 29%;
         border-radius: 5px;
         margin: 10px;
     }
@@ -838,6 +906,9 @@ nav{
     }
 }
 @media (max-width:500px){
+    .course-banner{
+        font-size: 16px;
+    }
     .logo{
         height: 45px;
     }
@@ -1044,6 +1115,13 @@ nav{
     }
 }
 @media (max-width:390px){
+    .course-banner{
+        font-size: 13px;
+        padding: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        letter-spacing: 0.5;
+    }
     .btn1,.btn2{
         padding: 7px;
         font-size: 10px;
@@ -1083,6 +1161,12 @@ nav{
         width: 85%;
         margin: 15px;
     }
+    .pop1 .pop-para{
+        margin: 0px;
+    }
+    .pop1 h3{
+        margin-bottom: 0px;
+    }
     .popular{
         padding: 10px;
     }
@@ -1099,9 +1183,5 @@ nav{
     }
     .news{
         width: 80%;
-    }
-    .line2{
-    margin: 1px;
-    color: rgba(238, 225, 225, 0.42);
     }
 }

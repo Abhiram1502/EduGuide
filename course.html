@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduGuide</title>
+    <title>EduGuide-Courses</title>
     <link rel="icon" href="images/EGL.png">
     <link  rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 <body>
     <label class="top-btn" type="button" onclick="topFunction()" id="topBtn" title="Back to top"><i class="fa-solid fa-arrow-up"></i></label>
+
     <div class="EduGuide">
         <nav id="nav">
             <div>
@@ -22,8 +23,8 @@
                 </div>
                 <div class="link-section" id="links">
                     <i id="cross" onclick="hideMenu()" class="fa-solid fa-xmark"></i>
-                    <li class="link active"><a href="#home">Home</a></li>
-                    <li class="link"><a href="course.html">Courses</a></li>
+                    <li class="link"><a href="index.html">Home</a></li>
+                    <li class="link active"><a href="course.html">Courses</a></li>
                     <li class="link"><a href="about.html">About Us</a></li>
                     <li class="link"><a href="blog.html">Blog</a></li>
                     <li class="link"><a href="contact.html">Contact Us</a></li>
@@ -33,70 +34,11 @@
                 <i id="Menu" onclick="showMenu()" class="fa-solid fa-bars"></i>
             </ul>
         </nav>
-        <div class="hero-section">
-            <div class="hero">
-                <div class="hero-content">
-                    <h1 class="hero-head"><span class="hero-head-sp">Empowering Your</span><br> Knowledge Journey</h1>
-                    <p class="hero-para">
-                        Access world-class courses and resources anytime, anywhere. <br>
-                        Learn from the best and achieve your dreams.
-                    </p>
-                    <div class="hero-btns">
-                        <button class="btn1">Get Started For Free</button>
-                        <button class="btn2">Explore Courses</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="features-section">
-            <div class="features">
-                <div class="feature1">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <h3>Skilled Instructors</h3>
-                    <p>Learn from industry experts and experienced educators dedicated to your success.</p>
-                </div>
-                <div class="feature1">
-                    <i class="fa-solid fa-globe"></i>
-                    <h3>Online Classes</h3>
-                    <p>Access live, interactive sessions designed to fit your schedule. Enjoy a seamless learning experience from the comfort of your home.</p>
-                </div>
-                <div class="feature1">
-                    <i class="fa-solid fa-house"></i>
-                    <h3>House Projects</h3>
-                    <p>Put your knowledge to the test with practical, hands-on projects. Build real-world skills and boost your confidence in problem-solving.</p>
-                </div>
-                <div class="feature1">
-                    <i class="fa-solid fa-book-open"></i>
-                    <h3>Book Library</h3>
-                    <p>Dive into an extensive collection of books and educational materials. 
-                        Support your learning journey with reliable and diverse resources.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="about-section">
-            <div class="about-back"></div>
-            <div class="about">
-                <div class="about-img">
-                    <img src="images/About.png" alt="">
-                </div>
-                <div class="about-content">
-                    <h3>ABOUT US</h3>
-                    <h2>WELCOME TO EDUGUIDE</h2>
-                    <p>Edu-Guide is dedicated to empowering learners worldwide with accessible, quality education. Our platform bridges the gap between learners and opportunities.</p>
-                    <p>Our mission is to make education engaging and convenient for everyone, anywhere.</p>
-                    <ul>
-                        <li><i class="fa-solid fa-arrow-right"></i> &nbsp; Personalized Learning Paths</li>
-                        <li><i class="fa-solid fa-arrow-right"></i> &nbsp; Live Skill Assessment</li>
-                        <li><i class="fa-solid fa-arrow-right"></i> &nbsp; Collaborative Learning</li>
-                        <li><i class="fa-solid fa-arrow-right"></i> &nbsp; Career Guidance Support</li>
-                        <li><i class="fa-solid fa-arrow-right"></i> &nbsp; Instructor-Led Workshops</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="banner">
+            <h1 class="course-banner">Take your career to the next level with EduGuide</h1>
         </div>
         <div class="popular-section">
-            <h3 class="pop-head">Our Popular Courses</h3>
+            <h3 class="pop-head">Our Courses</h3>
             <div class="popular">
                 <div class="pop1">
                     <div class="pop-img">
@@ -196,31 +138,102 @@
                 </div>
             </div>
         </div>
-        <div class="testimonial-section">
-            <h3 class="pop-head">Our Students Say!</h3>
-            <div class="testimonial">
-                <div class="review1">
-                    <div class="review-img"><img src="images/T1.jpg" alt=""></div>
-                    <div class="test-info">
-                        <h4 class="test-head">Sarah W</h4>
-                        <p class="test-para">(Student, Web Development)</p>
-                        <p class="test-content">"Edu-Guide completely transformed the way I learn. The courses are well-structured, and the instructors are incredibly supportive."</p>
+        <div class="popular-section">
+            <div class="popular">
+                <div class="pop1">
+                    <div class="pop-img">
+                        <img src="images/pop2.png" alt="Web Development">
+                    </div>
+                    <div class="pop-content">
+                        <h3>₹ 499</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p>(265)</p>
+                        </div>
+                        <h3>Data Science with Python</h3>
+                        <p class="pop-para">Master data analysis, visualization, and machine learning using Python.</p>
+                        <div class="pop-info">
+                            <div class="info1">
+                                <i class="fa-solid fa-user-tie"></i>
+                                <p>John Doe</p>
+                            </div>
+                            <div class="info2">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>5 weeks</p>
+                            </div>
+                            <div class="info3">
+                                <i class="fa-solid fa-user"></i>
+                                <p>90 Students</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="review1">
-                    <div class="review-img"><img src="images/T3.png" alt=""></div>
-                    <div class="test-info">
-                        <h4 class="test-head">Rajesh K</h4>
-                        <p class="test-para">(Professional, Data Science)</p>
-                        <p class="test-content">"Edu-Guide's hands-on Data Science course gave me the confidence to tackle real-world problems and switch careers successfully."</p>
+                <div class="pop1" id="pop-center">
+                    <div class="pop-img">
+                        <img src="images/pop1.png" alt="Web Development">
+                    </div>
+                    <div class="pop-content">
+                        <h3>₹ 499</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <p>(345)</p>
+                        </div>
+                        <h3>Web Development Bootcamp</h3>
+                        <p class="pop-para">Learn HTML, CSS, and JavaScript with real-world projects.</p>
+                        <div class="pop-info">
+                            <div class="info1">
+                                <i class="fa-solid fa-user-tie"></i>
+                                <p>John Doe</p>
+                            </div>
+                            <div class="info2">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>5 weeks</p>
+                            </div>
+                            <div class="info3">
+                                <i class="fa-solid fa-user"></i>
+                                <p>90 Students</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="review1">
-                    <div class="review-img"><img src="images/T2.png" alt=""></div>
-                    <div class="test-info">
-                        <h4 class="test-head">Emily J</h4>
-                        <p class="test-para">(Entrepreneur, Digital Marketing)</p>
-                        <p class="test-content">"Edu-Guide's Digital Marketing course provided practical strategies that helped me grow my online business effortlessly."</p>
+                <div class="pop1">
+                    <div class="pop-img">
+                        <img src="images/pop3.png" alt="Web Development">
+                    </div>
+                    <div class="pop-content">
+                        <h3>₹ 499</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p>(265)</p>
+                        </div>
+                        <h3>Digital Marketing Essentials</h3>
+                        <p class="pop-para">Understand SEO, social media marketing, and content creation strategies.</p>
+                        <div class="pop-info">
+                            <div class="info1">
+                                <i class="fa-solid fa-user-tie"></i>
+                                <p>John Doe</p>
+                            </div>
+                            <div class="info2">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>5 weeks</p>
+                            </div>
+                            <div class="info3">
+                                <i class="fa-solid fa-user"></i>
+                                <p>90 Students</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
